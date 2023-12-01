@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.newsletter-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charcoal-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-holder {
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: var(--dark-slate-grey) 0px 5px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5rem;
+    width: 88rem;
+}
+
+.newsletter {
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+ul img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+li {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+form {
+    margin-top: 4rem;
+}
+
+form div {
+    font-size: 1.2rem;
+    font-weight: 700;    
+}
+
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--grey);
+    outline: none;
+    margin-top: 1rem;
+}
+
+form input[type="email"]::placeholder {
+    color: var(--grey);
+}
+
+form button {
+    display: block;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    border-radius: 0.8rem;
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+}
+
